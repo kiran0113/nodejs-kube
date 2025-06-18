@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: kiranyn/myrepo4:${{ github.sha }}
+          tags: kiranyn/node:${{ github.sha }}
           
       - name: Deploy to DigitalOcean Droplet via SSH
         uses: appleboy/ssh-action@v1.0.0
